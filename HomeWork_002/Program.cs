@@ -32,7 +32,7 @@ int addnumber = Readint("Введите число: ");
 int multiplier = 1;
 int tempnumber = addnumber;
 
-if (addnumber < 99)
+if (addnumber < 100)
 {
     Console.WriteLine ("Третьей цифры у числа нет");
 }
