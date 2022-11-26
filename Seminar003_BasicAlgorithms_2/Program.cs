@@ -37,7 +37,7 @@ else if (x > 0 && y < 0)
 // Задача 18 Напишите программу, которая по заданному номеру четверти,
 // показывает диапазон возможных координат точек в этой четверти (x,y)
 
-
+/*
 int Readint (string massage)
 {
     Console.Write (massage);
@@ -45,6 +45,7 @@ int Readint (string massage)
 }
 /*
 int quarter = Readint("введите номер четверти: ");
+*/
 
 /*
 if (quarter == 0 || quarter > 4)
