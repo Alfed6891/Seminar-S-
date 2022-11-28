@@ -1,12 +1,13 @@
 ﻿// Задача 17 Напишите программу, которая принимает на вход координаты точки (X,Y)
 // Причем X != 0, Y != 0 и  выдает номер четверти плоскости, в которой находится эта точка.
-/*
+
 int Readint (string massage)
 {
     Console.Write (massage);
     return Convert.ToInt32 (Console.ReadLine());
 }
 
+/*
 int x = Readint ("Введите точку x: ");
 int y = Readint ("Введите точку У: ");
 
@@ -111,7 +112,7 @@ Console.WriteLine(distans);
 // Напишите программу, которая принимает на вход число (N)
 // и выдает таблицу квадратов чисел от 1 до N
 
-/*
+
 int number = Readint ("Введите число: ");
 int i = 1;
 
@@ -120,4 +121,3 @@ while (i < number)
     Console.Write (i*i + " ");
     i++;
 }
-*/
