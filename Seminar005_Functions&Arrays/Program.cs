@@ -9,7 +9,7 @@ int[] numbers = new int [sise];
 int sumPositive = 0;
 int sumNegative = 0;
 
-FillrrayRandomNumbrs(numbers, -9, 9);
+FillArrayRandomNumbers(numbers, -9, 9);
 WriteArray(numbers);
 
 
@@ -32,7 +32,7 @@ Console.WriteLine ("Сумма отрицательных чисел: " + sumNeg
 
 
 
-void FillrrayRandomNumbrs (int[] array, int min, int max)
+void FillArrayRandomNumbers (int[] array, int min, int max)
 {
     for(int i = 0; i < array.Length; i++)
     {
@@ -58,7 +58,7 @@ void WriteArray (int[] array)
 /*
 int sise = 5;
 int [] array_1 = new int [sise];
-FillrrayRandomNumbrs (array_1, -9, 9);
+FillArrayRandomNumbers (array_1, -9, 9);
 int [] newArray = new int [array_1.Length];
 
 for (int i = 0; i < array_1.Length; i++)
@@ -82,7 +82,7 @@ int Readint (string massage)
 /*
 int sise_2 = Readint("Введите длинну массива: ");
 int [] array_2 = new int [sise_2];
-FillrrayRandomNumbrs (array_2, -9, 9);
+FillArrayRandomNumbers (array_2, -9, 9);
 WriteArray(array_2);
 
 int searchnumber = Readint("Введите искомое число: ");
@@ -104,7 +104,7 @@ for(int i = 0; i < array_2.Length; i++)
 /*
 int sise_2 = Readint("Введите длинну массива: ");
 int [] array_2 = new int [sise_2];
-FillrrayRandomNumbrs (array_2, -9, 9);
+FillArrayRandomNumbers (array_2, -9, 9);
 WriteArray(array_2);
 
 int searchnumber = Readint("Введите искомое число: ");
@@ -142,7 +142,7 @@ else
 /*
 int sise_3 = 123;
 int [] array_3 = new int [sise_3];
-FillrrayRandomNumbrs (array_3, 1, 999);
+FillArrayRandomNumbers (array_3, 1, 999);
 WriteArray(array_3);
 
 int quantitynumbers = 0;
@@ -183,8 +183,8 @@ Console.WriteLine(count);
 // [1 2 3 4 5] -> 5 8 3
 // [6 7 3 6] -> 36 21
 
-/*
-int size = ReadInt("Введите размер массива: ");
+
+int size = Readint("Введите размер массива: ");
 int[] numbers = new int[size];
 int[] pairs;
 
@@ -206,4 +206,3 @@ for(int i = 0; i < numbers.Length / 2; i++)
 pairs[i] = numbers[i] * numbers[numbers.Length - 1 - i];
 }
 WriteArray(pairs);
-*/
