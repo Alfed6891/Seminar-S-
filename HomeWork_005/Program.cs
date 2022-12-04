@@ -81,7 +81,7 @@ Console.WriteLine ($"Сумма элементов массива стоящих
 int sise_3 = Readint("Введите длинну массива: ");
 double [] array_3 = new double [sise_3];
 double max = 0;
-double min = 100;
+double min = 1000;
 double result = 0.0;
 ConvertDoubleRandom (array_3, 99, 999);
 for(int i = 0; i < array_3.Length; i++)
