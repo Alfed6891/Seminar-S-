@@ -168,6 +168,7 @@ WriteArray(fibonacci);
 
 // Задача 45: Напишите программу, которая будет создавать копию заданного массива с помощью поэлементного копирования.
 
+/*
 int size = ReadInt("Введите размер: ");
 int[] numbers = new int[size];
 FillArrayRandomNumbers(numbers);
@@ -175,3 +176,45 @@ FillArrayRandomNumbers(numbers);
 int[] copyNumbers = CopyArray(numbers);
 WriteArray(numbers);
 WriteArray(copyNumbers);
+*/
+
+Console.Write("Введите числа через запятую: ");
+string? inputNumbers = Console.ReadLine();
+char splitSymbol = ',';
+
+WriteArray(ParseArray(inputNumbers, splitSymbol));
+
+
+
+
+
+int[] ParseArray(string inputNumbers, char split)
+{
+int numbersCount = 1;
+for(int i = 0; i < inputNumbers.Length; i++)
+{
+    if(inputNumbers[i] == split)
+    {
+        numbersCount++;
+    }
+}
+
+
+int[] numbers = new int[numbersCount];
+int numberIndex = 0;
+string subString = "";
+for(int i = 0; i < inputNumbers.Length; i++)
+{
+if(inputNumbers[i] == split)
+{
+numbers[numberIndex++] = Convert.ToInt32(subString);
+subString = "";
+}
+else
+{
+    subString += inputNumbers[i];
+}
+}
+numbers[numberIndex] = Convert.ToInt32(subString);
+return numbers;
+}
