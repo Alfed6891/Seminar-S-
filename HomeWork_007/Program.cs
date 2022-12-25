@@ -2,13 +2,13 @@
 void FillMatrixRandomDouble(double[,] array)
 {
 
-for(int i = 0; i < array.GetLength(0); i++)
-{
-    for(int j = 0; j < array.GetLength(1); j++)
-        {
-        array[i, j] = Convert.ToDouble (new Random().Next(99, 999)/10.0);
-        }
-}
+    for(int i = 0; i < array.GetLength(0); i++)
+    {
+        for(int j = 0; j < array.GetLength(1); j++)
+            {
+                array[i, j] = Convert.ToDouble (new Random().Next(99, 999)/10.0);
+            }
+    }
 }
 
 void WriteMatrixDouble(double[,] array)
@@ -17,7 +17,7 @@ void WriteMatrixDouble(double[,] array)
     {
         for(int j = 0; j < array.GetLength(1); j++)
         {
-        Console.Write(array[i, j] + " ");
+            Console.Write(array[i, j] + " ");
         }
         Console.WriteLine();
     }
@@ -26,8 +26,8 @@ void WriteMatrixDouble(double[,] array)
 
 int ReadInt(string message)
 {
-Console.Write(message);
-return Convert.ToInt32(Console.ReadLine());
+    Console.Write(message);
+    return Convert.ToInt32(Console.ReadLine());
 }
 
 void WriteMatrix(int[,] array)
@@ -36,7 +36,7 @@ void WriteMatrix(int[,] array)
     {
         for(int j = 0; j < array.GetLength(1); j++)
         {
-        Console.Write(array[i, j] + " ");
+            Console.Write(array[i, j] + " ");
         }
         Console.WriteLine();
     }
@@ -46,12 +46,12 @@ void WriteMatrix(int[,] array)
 void FillMatrixRandomNumbers(int[,] array)
 {
 for(int i = 0; i < array.GetLength(0); i++)
-{
-for(int j = 0; j < array.GetLength(1); j++)
-{
-array[i, j] = new Random().Next(1, 10);
-}
-}
+    {
+        for(int j = 0; j < array.GetLength(1); j++)
+            {
+                array[i, j] = new Random().Next(1, 10);
+            }
+    }
 }
 
 
